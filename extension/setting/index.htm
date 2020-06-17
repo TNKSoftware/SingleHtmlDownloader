@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Single file downloader - setting</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="../util.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+
+<div id="title">
+	<div id="title_in">
+		<span class="tnk_mrm_lc" data-lc="title">_TITLE_</span>
+	</div>
+</div>
+
+<hr>
+
+<div id="donate">
+	<span class="subtitle tnk_mrm_lc" data-lc="pleasedonate">_DONATE_</span><br>
+	<div class="bnr">
+		<a class="bnr" href="https://www.tnksoft.com/donate/"><img src="donate.svg"></a>
+	</div>
+	<div class="donatemsg">
+		<span class="tnk_mrm_lc" data-lc="donatemsg">_DONATEMSG_</span>
+	</div>
+</div>
+
+<hr>
+
+<div id="howto">
+<div class="subtitle tnk_mrm_lc" data-lc="howto">_HOWTO_</div>
+<table id="howstep">
+<tr>
+	<td><img src="help1.png"><br><img src="help4.png"></td>
+	<td><img src="help2.png"></td>
+	<td><img src="help3.png"></td>
+</tr>
+<tr>
+	<td>1.<span class="tnk_mrm_lc" data-lc="click">_CLICK_</span></td>
+	<td>2.<span class="tnk_mrm_lc" data-lc="select">_SELECT_</span></td>
+	<td>3.<span class="tnk_mrm_lc" data-lc="done">_DONE_</span></td>
+</tr>
+</table>
+
+</div>
+
+<hr>
+
+<div id="tips">
+	<span class="tnk_mrm_lc" data-lc="reedit">_REEDIT_</span><a href="https://www.tnksoft.com/blog/?p=5461" target="_blank">&#x29C9;</a><br><br>
+	<div class="tnk_mrm_lc" data-lc="support">_SUPPORT_</div>
+</div>
+
+<hr>
+
+<div id="dltype" class="desc">
+	<div class="subtitle tnk_mrm_lc" data-lc="dltype">_DLTYPE_</div>
+	<div class="tnk_mrm_lc" data-lc="dltypemenu">_DLTMENU_</div><br>
+	<div class="tnk_mrm_lc" data-lc="dltypealgo">_DLTALGO_</div>
+	<ul>
+		<li class="tnk_mrm_lc" data-lc="dltype_script">_SCRIPT_
+		<li class="tnk_mrm_lc" data-lc="dltype_meta">_META_
+		<li class="tnk_mrm_lc" data-lc="dltype_iframe">_IFRAME_
+		<li class="tnk_mrm_lc" data-lc="dltype_imglink">_IMGLINK_
+		<li class="tnk_mrm_lc" data-lc="dltype_empty">_EMPTYTAG_
+		<li class="tnk_mrm_lc" data-lc="dltype_style">_STYLE_
+	</ul>
+</div>
+
+<hr>
+
+<div id="notice" class="desc">
+<div class="subtitle tnk_mrm_lc" data-lc="notice">_NOTICE_</div>
+<ul>
+<li><span class="tnk_mrm_lc" data-lc="htmlstd">_HTMLSTD_</span><br>
+<img src="notice.png" class="nostd">&nbsp;<span class="nostd tnk_mrm_lc" data-lc="nostd">_NONSTD_</span>
+<li class="tnk_mrm_lc" data-lc="filesize">_FILESIZE_
+<li class="tnk_mrm_lc" data-lc="compsc">_COMPSC_
+<li class="tnk_mrm_lc" data-lc="filter">_FILTER_
+<li class="tnk_mrm_lc" data-lc="iframe">_IFRAME_
+<li class="tnk_mrm_lc" data-lc="browser">_BROWSER_				
+</ul>
+</div>
+
+</div>
+
+<hr>
+
+<div id="setting" class="desc">
+<div align="center">
+<span class="subtitle tnk_mrm_lc" data-lc="setting">_SETTING_</span>
+&nbsp;<input type="button" id="save"/>&nbsp;<input type="button" id="reset"/>
+</div><br>
+
+<span class="tnk_mrm_lc bold" data-lc="btndefault">_BTNDEF_</span>
+<div id="btndef" class="setparam">
+	<input type="radio" name="dltype" value="0"><span class="tnk_mrm_lc radio" data-lc="defaultdl">_FULL_</span>
+	<input type="radio" name="dltype" value="1"><span class="tnk_mrm_lc radio" data-lc="stylekeep">_STYLE_</span>
+	<input type="radio" name="dltype" value="2"><span class="tnk_mrm_lc" data-lc="minimaldl">_MIN_</span>
+</div><br>
+
+<span class="tnk_mrm_lc bold" data-lc="filemax">_FILEMAX_</span>
+<table id="filemax" class="setparam">
+	<tr><td class="ftype tnk_mrm_lc" data-lc="image">_IMAGE_</td><td class="fmax"><input type="number" class="fsize" data-type="image"></td></tr>
+	<tr><td class="ftype tnk_mrm_lc" data-lc="font">_FONT_</td><td class="fmax"><input type="number" class="fsize" data-type="font"></td></tr>
+	<tr><td class="ftype tnk_mrm_lc" data-lc="script">_SCRIPT_</td><td class="fmax"><input type="number" class="fsize" data-type="js"></td></tr>
+	<tr><td class="ftype tnk_mrm_lc" data-lc="stylesheet">_STYLESHEET_</td><td class="fmax"><input type="number" class="fsize" data-type="css"></td></tr>
+	<tr><td class="ftype tnk_mrm_lc" data-lc="others">_OTHERS_</td><td class="fmax"><input type="number" class="fsize" data-type="others"></td></tr>
+</table>
+
+<br>
+
+<div id="showsave">
+	<div><span class="tnk_mrm_lc bold" data-lc="showsave">_SHOWSAVE_</span></div>
+	<input type="checkbox" name="showsave">
+</div>
+
+<br>
+
+<span class="tnk_mrm_lc bold" data-lc="timeout">_TIMEOUT_</span>
+	<div id="tmouts" class="setparam">
+		<input type="number" class="tmout" name="timeout">&nbsp;<span class="tnk_mrm_lc" data-lc="seconds">_SECONDS_</span>
+	</div>
+</span>
+</div>
+
+<hr>
+
+<div id="copy">&copy; TNK Software / Tanaka Yusuke</div>
+
+</body>
+</html>

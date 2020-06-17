@@ -1,0 +1,34 @@
+#tnksdl-popup{
+	z-index: 1000;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 3cm;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	border:1px solid gray;
+	background-color:white;
+	padding: 0.5em;
+	font-size: small;
+	border-radius: 5px;
+}
+
+#tnksdl-popup progress{
+	width: 100%;
+	min-height: 0.5em;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+
+#tnksdl-report{
+	text-align: center;
+	background-color: #248;
+	color: #fff;
+	border-style: none;
+}
+
+#tnksdl-cancel:hover {
+	background-color: #24d;
+	color: #fff;
+}

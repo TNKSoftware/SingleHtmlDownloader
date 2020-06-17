@@ -1,0 +1,152 @@
+{
+	"title":{
+		"message":"Single html downloader"
+	},
+	"about":{
+		"message":"Download as a single html file for the current page with images and styles."
+	},
+	"howto":{
+		"message":"How to use"
+	},
+	"click":{
+		"message":"Click a button on toolbar or a context menu item."
+	},
+	"select":{
+		"message":"Select download destination."
+	},
+	"done":{
+		"message":"Done!"
+	},
+	"reedit":{
+		"message":"If you want to re-edit downloaded HTML file, it is useful to use Developer Tool(F12 key). Please read my blog about details."
+	},
+	"support":{
+		"message":"If you have any questions, requests or find bugs(ex: Can't download the specific page), please ask to [master@tnksoft.com]. It'll take a time because I'm an individual developer but I response to it as much as possible."
+	},
+	"dltype":{
+		"message":"About download mode"
+	},
+	"dltypemenu":{
+		"message":"At the context menu, it appends a download type. This reduces download data and it improves loading speed. But, external contents(such as layout and YouTube) are not maintained completely. So, please be sure to check the downloaded contents."
+	},
+	"dltypealgo":{
+		"message":"In this mode, the following data will be removed."
+	},
+	"dltype_script":{
+		"message":"<script> tags and embedded scripts(Instead of, <noscript> contents are expand)."
+	},
+	"dltype_meta":{
+		"message":"<meta> tags and embedded comments. "
+	},
+	"dltype_iframe":{
+		"message":"other page reference elements(iframe)."
+	},
+	"dltype_style":{
+		"message":"When you choosed \"Store minimal contens\", Stylesheets(Information for forming sentences) will remove."
+	},
+	"dltype_imglink":{
+		"message":"Links which appended to image files."
+	},
+	"dltype_empty":{
+		"message":"Elements which have no text."
+	},
+	"notice":{
+		"message":"Notices"
+	},
+	"filesize":{
+		"message":"Embedded data will be converted into the string. Therefore, file size becomes large a little compared with the time of saving individually."
+	},
+	"compsc":{
+		"message":"A difficult tracking URL, such as an obfuscated script, may not be reflected correctly."
+	},
+	"filter":{
+		"message":"If you are using contents filter(like AdBlocker) add-on together, the design may collapse."
+	},
+	"iframe":{
+		"message":"IFrame contents are not converted. "
+	},
+	"browser":{
+		"message":"The result of created data differs between Google Chrome and FireFox because of differences in browser programs."
+	},
+	"htmlstd":{
+		"message":"It may not convert correctly other than HTML5 with utf-8 encoded becuase downloaded file is based on HTML5 format."
+	},
+	"nostd":{
+		"message":"*An icon is shown on the button which does not meeting requirements(H:not HTML5, U:not utf-8)."
+	},
+	"setting":{
+		"message":"Settings"
+	},
+	"btndefault":{
+		"message":"Download method when pressed the button on the toolbar"
+	},
+	"filemax":{
+		"message":"The maximum size of embedding files(Files that exceed the value will remain external links)."
+	},
+	"font":{
+		"message":"Fonts"
+	},
+	"image":{
+		"message":"Images"
+	},
+	"script":{
+		"message":"Script"
+	},
+	"stylesheet":{
+		"message":"Style Sheet"
+	},
+	"others":{
+		"message":"Others"
+	},
+	"showsave":{
+		"message":"Always specify where to save to"
+	},
+	"timeout":{
+		"message": "Time to abort the download (don't abort with 0)"
+	},
+	"seconds":{
+		"message": "Seconds"
+	},
+	"save":{
+		"message":"Save"
+	},
+	"reset":{
+		"message":"Reset"
+	},
+	"convnotice":{
+		"message":"Downloaded design will be broken for those reasons:"
+	},
+	"nothtml5":{
+		"message":"･This page is not based on HTML5."
+	},
+	"notutf8":{
+		"message":"･This page is not utf-8 text format."
+	},
+	"pleasedonate":{
+		"message":"Donate, please"
+	},
+	"donatemsg":{
+		"message":"I released this extension as an open source with MIT License and anyone enables it to scrutinize a program. Therefore, ways to obtain an income will be restricted to your kindness. I live by social security because I have a high functioning autism and Japan is the peculiar society where priority is given to communications skills over technical skills. I would like to independent living if I can. Please donate always and many times if you were pleased with this app."
+	},
+	"defaultdl":{
+		"message":"Store all contents"
+	},
+	"stylekeep":{
+		"message":"Store optimized contents"
+	},
+	"minimaldl":{
+		"message":"Store minimal contents"
+	},
+	"creating":{
+		"message": "Creating a HTML file..."
+	},
+	"report":{
+		"message": "Report an issue"
+	},
+	"issuetitle":{
+		"message": "Single HTML Downloader issue"
+	},
+	"issuebody":{
+		"message": "(If you can get an error log for an add-on in your browser's development tool, please paste it.)"
+	}
+}

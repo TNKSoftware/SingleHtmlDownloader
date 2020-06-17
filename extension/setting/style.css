@@ -1,0 +1,142 @@
+﻿@font-face {
+	font-family: "Yu Gothic";
+	src: local("Yu Gothic Medium");
+	font-weight: 400;
+}
+
+body{
+	font-family: Meiryo, "Yu Gothic", Osaka, sans-serif;
+	font-size:10.5pt;
+}
+
+ul{
+	margin:0.5em 0.5em 0.5em -1.5em; 
+}
+
+hr{
+	border-width:1px 0 0 0;
+	border-style:solid;
+	border-color:gray;
+	margin:1em;
+}
+
+#title{
+	margin:0.2em;
+	margin-bottom:0.5em;
+	padding:0.2em;
+	font-size:12pt;
+	font-weight:bold;
+	background-color:lightblue;
+	text-align:center;
+}
+
+#howto{
+	text-align:center;
+	margin-bottom:1.5em;
+}
+
+.subtitle{
+	text-align:center;
+	font-weight:bold;
+	font-size:11pt;
+	color:#041a3d;
+}
+
+#howstep{
+	display:inline-table;
+}
+
+#howstep td{
+	font-size:smaller;
+	font-weight:bold;
+	padding-left:1em;
+	padding-right:1em;
+}
+
+#tips{
+	text-align:left;
+	margin:1.5em 2em 1em 2em;
+}
+
+.desc{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+img.nostd{
+	vertical-align:middle;
+	border:1px solid darkgray;
+}
+
+span.nostd{
+	font-size:smaller;
+}
+
+#notice li{
+	font-size:10.5pt;
+}
+
+.setparam{
+	margin-left:1em;
+}
+
+.fsize{
+	width:5em;
+}
+
+.ftype{
+	padding-right:0.5em;
+}
+
+.fmax::after{
+	content:"KB";
+	padding-left:0.25em;
+}
+
+#donate{
+	text-align: center;
+}
+
+#showsave{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#showsave input{
+	margin-left: 1em;
+}
+
+#tmouts .tmout{
+	width:5em;
+}
+
+#donate .bnr{
+	margin-top:0.5em;
+	margin-bottom: 0.5em;
+}
+
+#donate .donatemsg{
+	text-align: left;
+	font-size: smaller;
+}
+
+#copy{
+	margin-top:1em;
+	font-size:9pt;
+	text-align:center;
+}
+
+span.bold{
+	font-weight:bold;
+	font-size:smaller;
+}
+
+span.radio{
+	margin-right:1em;
+}
+
+input.fsize, input.tmout{
+	text-align: right;
+}
