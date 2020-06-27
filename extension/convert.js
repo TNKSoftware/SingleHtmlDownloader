@@ -81,13 +81,15 @@ class DownloadTask{
 		const doc = this.doc;
 
 		var tagnames, tags, tag;
-		tags = doc.getElementsByTagName("noscript");
+		if(settings.noscript == true){
+			tags = doc.getElementsByTagName("noscript");
 
-		while(tags.length > 0){
-			var t = tags[0], p = t.parentNode;
-			var ih = t.innerHTML.replaceAll("&lt;", "<").replaceAll("&gt;", ">").trim();
-			t.insertAdjacentHTML("afterend", ih);
-			p.removeChild(t);
+			while(tags.length > 0){
+				var t = tags[0], p = t.parentNode;
+				var ih = t.innerHTML.replaceAll("&lt;", "<").replaceAll("&gt;", ">").trim();
+				t.insertAdjacentHTML("afterend", ih);
+				p.removeChild(t);
+			}
 		}
 
 		tagnames = ["meta", "script", "iframe", "link", "style"];
@@ -405,7 +407,12 @@ class DownloadTask{
 		for(var i = 0, el = t.elemcount; i < el; i++){
 			var tagName = elems[i].tagName.toLowerCase();
 			if(tagName == "img" || (tagName == "link" && elems[i].rel.toLowerCase() != "stylesheet")){
-				var src = (tagName == "img") ? elems[i].src : elems[i].href;
+				var src;
+				if(settings.loadlazy == true && tagName == "img" && elems[i].hasAttribute("data-src")){
+					src = elems[i].getAttribute("data-src");
+				}else{
+					src = (tagName == "img") ? elems[i].src : elems[i].href;
+				}
 				t.downloadImage(src, i, (res)=>{
 					if(res.success){
 						var index = res.param;

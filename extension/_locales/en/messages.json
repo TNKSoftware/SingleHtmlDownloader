@@ -98,6 +98,12 @@
 	"others":{
 		"message":"Others"
 	},
+	"noscript":{
+		"message":"Reflect a noscript tag during optimization"
+	},
+	"loadlazy":{
+		"message":"Pre-reading image data by LoadLazy"
+	},
 	"showsave":{
 		"message":"Always specify where to save to"
 	},

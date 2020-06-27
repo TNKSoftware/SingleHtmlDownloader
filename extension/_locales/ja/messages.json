@@ -101,6 +101,12 @@
 	"showsave":{
 		"message":"保存先を常に指定する"
 	},
+	"noscript":{
+		"message":"最適化時にnoscriptタグの内容を反映させる"
+	},
+	"loadlazy":{
+		"message":"LoadLazyよる画像データを先読みする"
+	},
 	"timeout":{
 		"message": "ダウンロード中止までの時間(0で中止させない)"
 	},

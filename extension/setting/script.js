@@ -28,8 +28,16 @@ function saveParam(){
 		}
 	}
 
-	var selem = document.getElementsByName("showsave")[0];
+	var selem;
+	
+	selem = document.getElementsByName("showsave")[0];
 	setting["showsave"] = (selem.checked === true); 
+
+	selem = document.getElementsByName("noscript")[0];
+	setting["noscript"] = (selem.checked === true);
+
+	selem = document.getElementsByName("loadlazy")[0];
+	setting["loadlazy"] = (selem.checked === true);
 
 	var tmel = document.getElementsByName("timeout")[0];
 	var tmout = parseInt(tmel.value);
@@ -55,9 +63,12 @@ function setSetting(s){
 		document.getElementsByName("dltype")[v].checked = true;
 	}
 
-	v = s["showsave"];
-	if(typeof v == "boolean") {
-		document.getElementsByName("showsave")[0].checked = v;
+	var pms = ["showsave", "loadlazy", "noscript"];
+	for(var p of pms){
+		v = s[p];
+		if(typeof v == "boolean") {
+			document.getElementsByName(p)[0].checked = v;
+		}
 	}
 
 	v = s["timeout"];

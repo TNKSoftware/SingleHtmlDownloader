@@ -110,6 +110,8 @@ function getDefaultSettings(){
 	ds.showsave = true;
 	ds.dltype = DlType.All;
 	ds.timeout = 60;
+	ds.noscript = false;
+	ds.loadlazy = true;
 	return ds;
 }
 

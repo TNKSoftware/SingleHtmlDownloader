@@ -98,13 +98,13 @@ span.nostd{
 	text-align: center;
 }
 
-#showsave{
+.checkset{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
 
-#showsave input{
+.checkset input{
 	margin-left: 1em;
 }
 
