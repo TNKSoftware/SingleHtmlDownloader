@@ -6,7 +6,7 @@
 	"author":"TNK Software / Tanaka Yusuke",
 	"homepage_url":"https://www.tnksoft.com/",
 
-	"version": "2.3",
+	"version": "2.4",
 	"default_locale": "en",
 
 	"icons": {
@@ -66,6 +66,6 @@
 	],
 	
 	"permissions": [
-		"storage", "tabs", "contextMenus", "downloads"
+		"storage", "tabs", "contextMenus", "downloads", "http://*/*", "https://*/*"
 	]
 }

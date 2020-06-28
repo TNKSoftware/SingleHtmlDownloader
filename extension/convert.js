@@ -1,16 +1,16 @@
-class DownloadTask{
-	static tasks = [];
+var download_tasks = [];
 
+class DownloadTask{
 	static create(param){
 		DownloadTask.dispose(param.id);
 
 		var task = new DownloadTask(param);
-		this.tasks.push(task);
+		download_tasks.push(task);
 		return task;
 	}
 
 	static dispose(id){
-		var ts = this.tasks;
+		var ts = download_tasks;
 		for(var i = 0, l = ts.length; i < l; i++){
 			var task = ts[i];
 			if(task.id == id){
@@ -21,23 +21,17 @@ class DownloadTask{
 		}
 	}
 
-	id;
-	url;
-	title;
-	dltype;
-	doc = null;
-
-	elemcount = 0;
-	elemrest = 0;
-
-	xhrs = [];
-
 	constructor(param){
 		const t = this;
 		t.id = param.id;
 		t.url = param.url;
 		t.title = param.title;
 		t.dltype = param.type;
+		t.doc = null;
+
+		t.elemcount = 0;
+		t.elemrest = 0;
+		t.xhrs = [];
 		
 		var parser = new DOMParser();
 		t.doc = parser.parseFromString(param.html, "text/html");
