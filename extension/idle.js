@@ -70,7 +70,6 @@
 		switch(param.msg){
 		case Msg.ShowIcon: tnksdl_showIcon(); break;
 		case Msg.Download: execDownload(param); break;
-		case Msg.DataComplete: beginDownload(param.title, param.html); break;
 		case Msg.Progress: setProgress(param.value, param.count); break;
 		case Msg.ClosePopup: removePopup(); break;
 		}
