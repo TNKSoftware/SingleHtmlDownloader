@@ -152,7 +152,10 @@ function addContentFile(tabid, path, start){
 }
 
 function createDownloadableFile(title, html){
-	var ttl = title.replace(/[\\\/\:\*\?\"<>\|~\r\n]/g, "").trim();
+	var ttl = title.
+		replace(/[\r\n]/g, "").
+		replace(/[\\\/\:\*\?\"<>\|~.]/g, "_").
+		trim();
 	if(ttl.length > 45) ttl = ttl.substring(0, 50);
 	if(!ttl) ttl = "webpage";
 	var filename = ttl + ".html";

@@ -53,15 +53,16 @@ class DownloadTask{
 		const t = this;
 		var metas = t.doc.getElementsByTagName("meta");
 		for(var i = 0, l = metas.length; i < l; i++){
-			var csattr = metas[i].getAttribute("charset");
+			var me = metas[i];
+			var csattr = me.getAttribute("charset");
 			if(csattr){
-				t.doc.getElementsByTagName("head")[0].removeChild(metas[i]);
+				me.parentNode.removeChild(me);
 				break;
 			}else{
-				csattr = metas[i].getAttribute("content");
+				csattr = me.getAttribute("content");
 				if(csattr){
 					if(csattr.toLowerCase().indexOf("charset") != -1) {
-						t.doc.getElementsByTagName("head")[0].removeChild(metas[i]);
+						me.parentNode.removeChild(me);
 						break;
 					}
 				}
@@ -193,7 +194,12 @@ class DownloadTask{
 
 		var fobj = createDownloadableFile(t.title, dhtml);
 		fobj.saveAs = settings.showsave;
-		extapi.downloads.download(fobj);
+		extapi.downloads.download(fobj, (res)=>{
+			if(res === undefined){
+				fobj.filename = null;
+				extapi.downloads.download(fobj);
+			}
+		});
 
 		DownloadTask.dispose(t.id);
 	}
