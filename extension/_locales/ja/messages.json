@@ -66,7 +66,7 @@
 		"message":"IFrame内のコンテンツは対象外です。"
 	},
 	"browser":{
-		"message":"ブラウザ設計の違いにより、Google ChromeとFireFoxではデータの形成結果が異なります。"
+		"message":"ブラウザ設計の違いにより、Chromiumブラウザ(Google ChromeやMicrosoft Edge)とFireFoxではデータの形成結果が異なります。"
 	},
 	"htmlstd":{
 		"message":"ダウンロードされるファイルはHTML5形式のため、utf-8エンコードのHTML5ページ以外は正しく変換できないことがあります"

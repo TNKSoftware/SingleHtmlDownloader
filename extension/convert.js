@@ -430,7 +430,8 @@ class DownloadTask{
 						var index = res.param;
 						var em = elems[index];
 						em.removeAttribute("src");
-						em.textContent = res.data;
+						// Escaping script tags in the string
+						em.textContent = res.data.replace(/<(\/*)script>/gi, "\\x3c$1script\\x3e");
 					}
 					t.checkFinish();
 				});
