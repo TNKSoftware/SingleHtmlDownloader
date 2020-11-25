@@ -29,6 +29,9 @@ function saveParam(){
 	}
 
 	var selem;
+
+	setting["emdate"] = (document.getElementsByName("emdate")[0].checked === true);
+	setting["emsrc"] = (document.getElementsByName("emsrc")[0].checked === true);
 	
 	selem = document.getElementsByName("showsave")[0];
 	setting["showsave"] = (selem.checked === true); 
@@ -63,7 +66,7 @@ function setSetting(s){
 		document.getElementsByName("dltype")[v].checked = true;
 	}
 
-	var pms = ["showsave", "loadlazy", "noscript"];
+	var pms = ["emdate", "emsrc", "showsave", "loadlazy", "noscript"];
 	for(var p of pms){
 		v = s[p];
 		if(typeof v == "boolean") {

@@ -83,6 +83,18 @@
 	"filemax":{
 		"message":"The maximum size of embedding files(Files that exceed the value will remain external links)."
 	},
+	"embedprop":{
+		"message":"Embed the download information in the page"
+	},
+	"emdate":{
+		"message":"Date"
+	},
+	"emsrc":{
+		"message":"Download from"
+	},
+	"showsrc":{
+		"message":"Show origin"
+	},
 	"font":{
 		"message":"Fonts"
 	},

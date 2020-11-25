@@ -106,6 +106,8 @@ function getDefaultSettings(){
 	for(var i = 0, l = extTypes.length; i < l; i++){
 		ds[extTypes[i] + "_max"] = getDefaultMaxValue(extTypes[i]);
 	}
+	ds.emdate = false;
+	ds.emsrc = false;
 	ds.showsave = true;
 	ds.dltype = DlType.All;
 	ds.timeout = 60;

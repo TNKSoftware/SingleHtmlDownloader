@@ -32,6 +32,8 @@ class DownloadTask{
 		t.elemcount = 0;
 		t.elemrest = 0;
 		t.xhrs = [];
+
+		t.now = new Date();
 		
 		var parser = new DOMParser();
 		t.doc = parser.parseFromString(param.html, "text/html");
@@ -172,6 +174,35 @@ class DownloadTask{
 		}
 	}
 
+	appendProp(){
+		if(!settings.emsrc && !settings.emdate) return;
+
+		const doc = this.doc;
+		var div = doc.createElement("div");
+		div.setAttribute("style",
+			"position:fixed;z-index:10000;text-align:center;width:100%;bottom:0;");
+		var idv = doc.createElement("div");
+		idv.setAttribute("style",
+			"display:inline;padding:0.5em;background-color:rgba(255,255,255,0.9);color:black;");
+		if(settings.emdate){
+			var ddv = doc.createElement("span");
+			ddv.textContent = this.now.toLocaleString();
+			idv.appendChild(ddv);
+		}
+		if(settings.emsrc){
+			var ema = doc.createElement("a");
+			ema.href = this.url;
+			ema.textContent = localize("showsrc");
+			if(settings.emdate) {
+				ema.setAttribute("style", "margin-left:1em;");
+			}
+			idv.appendChild(ema);
+		}
+		div.appendChild(idv);
+		doc.body.appendChild(doc.createComment("Single HTML Downloader info"));
+		doc.body.appendChild(div);
+	}
+
 	checkFinish(){
 		const t = this;
 	
@@ -184,9 +215,12 @@ class DownloadTask{
 
 		if(t.elemrest > 0) return;
 
+
 		var dhtml = "<!DOCTYPE html><html><head>"+
 			"<base href=\""+ encodeURI(t.url) +"\">" +
-			"<meta charset=\"utf-8\">";
+			"<meta charset=\"utf-8\">" +
+			"<meta name=\"download_date\" content=\"" + t.now.toISOString() + "\"/>";
+
 		dhtml += t.doc.documentElement.innerHTML.substring
 			(t.doc.documentElement.innerHTML.indexOf(">") + 1);
 
@@ -465,6 +499,7 @@ class DownloadTask{
 		t.removeMeta();
 		t.removeTags();
 		t.convertPre();
+		t.appendProp();
 		t.getSubFiles();
 	}
 }

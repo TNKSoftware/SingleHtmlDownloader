@@ -83,6 +83,18 @@
 	"filemax":{
 		"message":"埋め込みファイルの容量上限（上限を超えるファイルは外部リンクのままになります）"
 	},
+	"embedprop":{
+		"message":"ダウンロード情報をページに埋め込む"
+	},
+	"emdate":{
+		"message":"日付"
+	},
+	"emsrc":{
+		"message":"ダウンロード元"
+	},
+	"showsrc":{
+		"message":"元ページを表示"
+	},
 	"stylesheet":{
 		"message":"スタイルシート"
 	},
