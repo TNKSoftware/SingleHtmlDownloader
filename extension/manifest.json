@@ -6,11 +6,7 @@
 	"author":"TNK Software / Tanaka Yusuke",
 	"homepage_url":"https://www.tnksoft.com/",
 
-<<<<<<< Updated upstream
-	"version": "2.7",
-=======
 	"version": "2.8",
->>>>>>> Stashed changes
 	"default_locale": "en",
 
 	"icons": {
