@@ -180,7 +180,7 @@ class DownloadTask{
 		const doc = this.doc;
 		var div = doc.createElement("div");
 		div.setAttribute("style",
-			"position:fixed;z-index:10000;text-align:center;width:100%;bottom:0;");
+			"position:fixed;z-index:999999;text-align:center;width:100%;bottom:0;");
 		var idv = doc.createElement("div");
 		idv.setAttribute("style",
 			"display:inline;padding:0.5em;background-color:rgba(255,255,255,0.9);color:black;");
@@ -479,6 +479,8 @@ class DownloadTask{
 						t.convertCssUrl(em.href, res.data, (str)=>{
 							if(str !== null){
 								var css = t.doc.createElement("style");
+								var media = em.getAttribute("media");
+								if(media) css.setAttribute("media", media);
 								css.textContent = str;
 								p.insertBefore(css, em);
 								p.removeChild(em);

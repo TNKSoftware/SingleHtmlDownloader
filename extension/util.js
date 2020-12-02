@@ -109,7 +109,7 @@ function getDefaultSettings(){
 	ds.emdate = false;
 	ds.emsrc = false;
 	ds.showsave = true;
-	ds.dltype = DlType.All;
+	ds.dltype = DlType.KeepStyle;
 	ds.timeout = 60;
 	ds.noscript = false;
 	ds.loadlazy = true;

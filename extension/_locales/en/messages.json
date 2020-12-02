@@ -59,6 +59,9 @@
 	"compsc":{
 		"message":"A difficult tracking URL, such as an obfuscated script, may not be reflected correctly."
 	},
+	"jsdoc":{
+		"message":"In sites that create pages with JavaScript (Facebook, Instagram, etc.), the content is not accurately reflected. This can be alleviated by selecting a save option other than \"Store all contents\"."
+	},
 	"filter":{
 		"message":"If you are using contents filter(like AdBlocker) add-on together, the design may collapse."
 	},
