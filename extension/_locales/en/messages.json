@@ -18,10 +18,10 @@
 		"message":"Done!"
 	},
 	"reedit":{
-		"message":"If you want to re-edit downloaded HTML file, it is useful to use Developer Tool(F12 key). Please read my blog about details."
+		"message":"If you want to re-edit downloaded HTML file, it is useful to use Developer Tool(F12 key). Please read my article about details."
 	},
 	"support":{
-		"message":"If you have any questions, requests or find bugs(ex: Can't download the specific page), please ask to [master@tnksoft.com]. It'll take a time because I'm an individual developer but I response to it as much as possible."
+		"message":"If you have any questions, requests or find bugs(ex: Can't download the specific page), please use contact form. It'll take a time because I'm an individual developer but I response to it as much as possible."
 	},
 	"dltype":{
 		"message":"About download mode"
@@ -160,14 +160,5 @@
 	},
 	"creating":{
 		"message": "Creating a HTML file..."
-	},
-	"report":{
-		"message": "Report an issue"
-	},
-	"issuetitle":{
-		"message": "Single HTML Downloader issue"
-	},
-	"issuebody":{
-		"message": "(If you can get an error log for an add-on in your browser's development tool, please paste it.)"
 	}
 }

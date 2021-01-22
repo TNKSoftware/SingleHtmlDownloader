@@ -140,3 +140,7 @@ span.radio{
 input.fsize, input.tmout{
 	text-align: right;
 }
+
+a.nl{
+	text-decoration: none;
+}

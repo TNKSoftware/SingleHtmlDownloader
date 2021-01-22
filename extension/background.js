@@ -78,6 +78,10 @@ function showIcon(tab, param){
 
 extapi.runtime.onMessage.addListener((param, sender, sendResponse) => {
 	switch(param.msg){
+	case Msg.OpenOption:
+		extapi.runtime.openOptionsPage();
+		break;
+
 	case Msg.ShowIcon:
 		showIcon(sender.tab, param);
 		break;

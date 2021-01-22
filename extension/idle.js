@@ -33,14 +33,10 @@
 	
 		var p = document.createElement("progress", {"max":0, "value":0});
 		d.appendChild(p);
-	
-		var m2 = ce("input", {"id": "tnksdl-report", "type": "button", "value":localize("report")});
+
+		var m2 = ce("input", {"id": "tnksdl-setting", "type": "button", "value":localize("setting")});
 		m2.addEventListener("click", (ev)=>{
-			var url = "https://www.tnksoft.com/contact/?";
-			url += "title=" + encodeURI(localize("issuetitle")) +
-				"&body=" + encodeURI(localize("issuebody")) +
-				"&url1=" + encodeURI(document.URL);
-			window.open(url, "_blank");
+			extapi.runtime.sendMessage({ msg: Msg.OpenOption });
 		});
 		d.appendChild(m2);
 	

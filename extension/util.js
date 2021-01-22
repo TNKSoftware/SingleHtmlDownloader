@@ -5,7 +5,8 @@ const Msg = {
 	Close: 5,
 	Document: 6,
 	Progress: 7,
-	ClosePopup: 8
+	ClosePopup: 8,
+	OpenOption: 9
 };
 
 const extTypes = [
